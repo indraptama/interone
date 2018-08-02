@@ -23,5 +23,5 @@ export default {
 <style>
  
 </style>
-
+<style src="@/assets/inter/inter-ui.css"></style>
 <style src="@/style/main.css"></style>
