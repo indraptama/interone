@@ -30,3 +30,13 @@ html {
     transform: translateY(-3rem)
   }
 }
+
+@media (min-width: 960px) {
+  .lg-text-7xl {
+    font-size: 5rem;
+  }
+}
+
+.zigzag > div:nth-child(3n-1) {
+  align-self: flex-end;
+}

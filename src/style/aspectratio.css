@@ -18,3 +18,11 @@
 .Ratio--4x3:before {
   padding-top: 75%;
 }
+
+.Ratio--16x9:before {
+  padding-top: 56.25%;
+}
+
+.Ratio--2x1:before {
+  padding-top: 50%;
+}
