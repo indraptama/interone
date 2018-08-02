@@ -1,0 +1,32 @@
+/* @tailwind preflight;
+@tailwind utilities; */
+
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+@import './aspectratio.css';
+@import './column.css';
+
+
+html {
+  color: #666;
+  font-size: 93.75%;
+  font-family: 'Helvetica Neue', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h-50vh {
+  height: 50vh;
+}
+
+.hero {
+  min-height: calc(50vh - 5.375rem) ;
+}
+
+.header-line {
+  height: 1px;
+}
+
+@media (min-width: 768px) {
+  .f-top-4 {
+    transform: translateY(-3rem)
+  }
+}
