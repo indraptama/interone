@@ -12,26 +12,26 @@
     
 
     // Content
-    article(class="max-w-xl px-6 mx-auto mb-16 lg:mb-24")
+    article(class="max-w-2xl px-6 mx-auto mb-16 lg:mb-24")
       <SectionHeader title="about internusa"></SectionHeader>
       div(class="leading-loose col-2 text-base")
         p {{ about }}
     
     // CEO
-    article(class="max-w-xl px-6 mx-auto mb-16 lg:mb-24")
+    article(class="max-w-2xl px-6 mx-auto mb-16 lg:mb-24")
       <SectionHeader title="director and commissioner"></SectionHeader>
       div(class="leading-normal text-base")
         ul(class="list-reset lg:flex flex-wrap")
           li(v-for='ceo in ceos' class="lg:w-1/3 lg:px-2 mb-4")
-            div(class="flex")
-              div(class="w-24")
+            div(class="flex lg:block")
+              div(class="w-24 mb-4")
                 div(class="Ratio")
                   div(class="RatioInner bg-cover bg-center" :style="{'background-image':'url('+ceo.pic+')'}")
-              div(class="flex-1 pl-4")
-                h4(class="text-sm") {{ceo.name}}
+              div(class="flex-1 pl-4 lg:pl-0")
+                h4(class="text-lg text-blue-darker") {{ceo.name}}
                 p(class="text-xs") {{ceo.pos}}
     
-    article(class="max-w-xl px-6 mx-auto mb-16 lg:mb-24")
+    article(class="max-w-2xl px-6 mx-auto mb-16 lg:mb-24")
       <SectionHeader title="our contact"></SectionHeader>
       div(class="leading-normal text-base")
         ul(class="list-reset lg:flex flex-wrap")
@@ -41,7 +41,7 @@
                 div(class="Ratio")
                   div(class="RatioInner bg-cover bg-center" :style="{'background-image':'url('+ceo.pic+')'}")
               div(class="flex-1 pl-4")
-                h4(class="text-sm") {{ceo.name}}
+                h4(class="text-lg") {{ceo.name}}
                 p(class="text-xs") {{ceo.pos}} 
 
        

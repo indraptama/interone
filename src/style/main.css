@@ -21,6 +21,15 @@ html {
   min-height: calc(50vh - 5.375rem) ;
 }
 
+
+.h-75vh {
+  height: 75vh;
+}
+
+.hero75 {
+  min-height: calc(75vh - 5.375rem) ;
+}
+
 .header-line {
   height: 1px;
 }
