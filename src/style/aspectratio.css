@@ -26,3 +26,7 @@
 .Ratio--2x1:before {
   padding-top: 50%;
 }
+
+.Ratio--2x3:before {
+  padding-top: 125%;
+}

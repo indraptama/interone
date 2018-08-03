@@ -15,15 +15,15 @@
       div(class="")
         ul(class="list-reset flex flex-wrap")
           // News JSON
-          li(v-for='post in news' class="w-full md:w-1/2 lg:w-1/3 mb-2 md:mb-0 md:px-3")
+          li(v-for='post in news' class="w-full md:w-1/2 lg:w-1/3 mb-4 md:px-3")
             div(class="bg-white flex md:block")
               // News Image
-              div(class="Ratio Ratio--4x3 w-32 md:w-auto")
+              div(class="Ratio Ratio--2x3 w-32 md:w-auto")
                 div(class="RatioInner bg-center bg-cover" :style="{'background-image':'url('+post.urlToImage+')'}")
-              div(class="content md:px-4 f-top-4 flex-1")
+              div(class="content md:px-4 flex-1")
                 div(class="bg-white p-3")
-                  h3(class="text-base mb-2") {{ post.title }}
-                  p(class="text-xs mb-2") {{ post.publishedAt }}
+                  h3(class="text-base mb-2 text-black leading-normal") {{ post.title }}
+                  p(class="text-xs mb-2 text-grey") {{ post.publishedAt }}
                   div(class="hidden md:block leading-loose text-sm") {{ post.description }}
       
        
@@ -47,7 +47,7 @@ export default {
   mounted: function() {
     return (
       axios
-        .get('https://newsapi.org/v2/top-headlines?country=id&apiKey=146da8fcb8414baeaac8f8cb789f92bb')
+        .get('https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=146da8fcb8414baeaac8f8cb789f92bb')
         .then(response => (this.news = response.data.articles))
     )
   }

@@ -18,11 +18,13 @@
     "@vue/cli-plugin-eslint": "^3.0.0-rc.10",
     "@vue/cli-plugin-pwa": "^3.0.0-rc.10",
     "@vue/cli-service": "^3.0.0-rc.10",
+    "aos": "^2.3.3",
     "axios": "^0.18.0",
     "postcss-import": "^11.1.0",
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "tailwindcss": "^0.6.4",
+    "vue-scroll-reveal": "^1.0.8",
     "vue-template-compiler": "^2.5.16"
   }
 }

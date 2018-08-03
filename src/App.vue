@@ -2,7 +2,10 @@
 <template lang="pug">
   div(id="app")
     <MainHeader />
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
+      
 
 </template>
 
@@ -21,7 +24,7 @@ export default {
 
 
 <style>
- 
+
 </style>
 <style src="@/assets/inter/inter-ui.css"></style>
 <style src="@/style/main.css"></style>
