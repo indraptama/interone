@@ -3,7 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import VueScrollReveal from 'vue-scroll-reveal';
+import VueWaypoint from 'vue-waypoint';
+
 
 import './registerServiceWorker'
 
@@ -17,10 +18,10 @@ Vue.config.productionTip = false
 //     mobile: false
 //   }
 
+Vue.use(VueWaypoint);
 
 
 new Vue({
-  VueScrollReveal,
   router,
   store,
   render: h => h(App)

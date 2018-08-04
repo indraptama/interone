@@ -25,6 +25,8 @@
     "pug-plain-loader": "^1.0.0",
     "tailwindcss": "^0.6.4",
     "vue-scroll-reveal": "^1.0.8",
-    "vue-template-compiler": "^2.5.16"
+    "vue-template-compiler": "^2.5.16",
+    "vue-waypoint": "^3.2.2",
+    "waypoint": "^0.2.8"
   }
 }

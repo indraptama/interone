@@ -1,7 +1,7 @@
 <template lang="pug">
   div(class="home bg-blue-darker absolute pin-t pin-l pin-r")
     // Slider
-    div(class="absolute pin-t pin-l pin-r h-screen opacity-50")
+    div(class="absolute pin-t pin-l pin-r h-screen opacity-25")
       div(class="absolute w-full h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?architecture,building')") 
     
     // Content

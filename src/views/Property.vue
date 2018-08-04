@@ -18,18 +18,18 @@
     
     div(class="px-6 max-w-2xl mx-auto")
       ul(class="list-reset flex flex-wrap")
-        li(v-for='post in rents' class="w-full md:w-1/2 lg:w-1/3 mb-6 px-3")
+        li(v-for='post in PropertyData' class="w-full md:w-1/2 lg:w-1/3 mb-8 px-3")
           <router-link to='/house' class="no-underline block">
             div(class="w-full")
-              div(class="Ratio Ratio--4x3 mb-2 rounded overflow-hidden")
-                div(class="RatioInner bg-center bg-cover" :style="{'background-image':'url('+post.webformatURL+')'}")
+              div(class="Ratio Ratio--4x3 mb-3 rounded overflow-hidden")
+                div(class="RatioInner bg-center bg-cover" :style="{'background-image':'url('+post.imgUrl+')'}")
             div(class="")
-              div(class="flex items-center mb-1")
-                span(class="inline-block pr-3 text-xs") Medan, Indonesia
+              div(class="flex items-center mb-2")
+                span(class="inline-block pr-3 text-xs font-bold text-black") Medan, Indonesia
                 span(class="flex-1 header-line bg-grey")
               div
-                h4(class="text-lg text-black mb-1") Apartemen di Jakarta Pusat
-                span(class="block text-base") Rp.40.000.000 / tahun
+                h4(class="text-base text-black mb-2") {{post.title}}
+                span(class="block text-sm") {{post.price}}
           </router-link>
     div(class="text-center mt-4 mb-16")
       img(src="../assets/loading2.svg" class="w-16")
@@ -37,22 +37,16 @@
 
 <script>
 
-import axios from 'axios';
+import PropertyData from '@/data/property.js';
 
 export default {
   name: 'Property',
   data: function() {
     return {
-      rents: null
+      rents: null,
+      PropertyData,
+
     }
   },
-
-  mounted: function() {
-    return (
-      axios
-        .get('https://pixabay.com/api/?key=514189-703fff051e59a34761ca4fe09&q=house+estate&image_type=photo&pretty=true')
-        .then(response => (this.rents = response.data.hits))
-    )
-  }
 }
 </script>
