@@ -2,7 +2,7 @@
   div(class="test")
     // background
     div(class="absolute pin-t pin-l pin-r bg-primary bg-blue-darker bg-cover bg-center h-50vh")
-    div(class="absolute pin-t pin-l pin-r bg-cover bg-center h-50vh opacity-25" style="background-image: url('https://source.unsplash.com/1600x900/?construction,building')")
+    div(class="absolute pin-t pin-l pin-r bg-cover bg-center h-50vh opacity-25" :style="{'background-image':'url('+`${baseUrl}img/hero/project.jpg`+')'}")
 
     // Hero
 
@@ -27,6 +27,11 @@ import ProjectThumb from '@/components/ProjectThumb.vue';
 export default {
   components: {
     ProjectThumb
+  },
+  data () {
+    return {
+      baseUrl: process.env.BASE_URL
+    }
   }
 }
 </script>

@@ -61,6 +61,12 @@ blockquote {
   }
 }
 
+
+
 .zigzag > div:nth-child(odd) {
   align-self: flex-end;
+}
+
+.zigzag:first-child {
+  align-self: flex-start!important;
 }
